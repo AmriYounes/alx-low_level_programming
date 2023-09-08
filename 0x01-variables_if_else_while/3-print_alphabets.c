@@ -9,16 +9,16 @@
  */
 int main(void)
 {
-        char c = 'a';
+	char c = 'a';
 
-        for (; c <= 'z'; c++)
-                putchar(c);
+	for (; c <= 'z'; c++)
+		putchar(c);
 
-        c = 'A';
+	c = 'A';
 
-        for (; c <= 'Z'; c++)
-                putchar(c);
+	for (; c <= 'Z'; c++)
+		putchar(c);
 
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
