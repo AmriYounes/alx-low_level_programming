@@ -7,6 +7,7 @@
  *
  * Return: Always 0 (indicating successful execution)
  */
+
 int main(void)
 {
         int x = 0;
