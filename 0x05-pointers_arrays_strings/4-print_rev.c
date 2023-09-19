@@ -6,10 +6,21 @@
  */
 void print_rev(char *s)
 {
-	if (*s == '\0')
-		return;
+	int length = 0;
+	char *p = s;
 
-	print_rev(s + 1);
+	while (*p != '\0')
+	{
+		length++;
+		p++;
+	}
 
-	_putchar(*s);
+	while (length >= 0)
+	{
+		_putchar(*p);
+		p--;
+		length--;
+	}
+	_putchar('\n');
 }
+
