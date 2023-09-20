@@ -6,7 +6,7 @@
  * @src: Pointer to the source string.
  * Return: Pointer to the destination string.
  */
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest,char *src)
 {
 	char *d = dest;
 	char *s = src;
