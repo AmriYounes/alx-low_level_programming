@@ -8,10 +8,10 @@
  *
  * Return: Pointer to the destination string.
  */
-char *_strncpy(char *dest, const char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	char *d = dest;
-	const char *s = src;
+	char *s = src;
 	int i = 0;
 
 	while (*s != '\0' && i < n)
