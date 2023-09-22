@@ -9,16 +9,21 @@
 char *cap_string(char *s)
 {
 	char *p = s;
+	char *symbols = ",;.!?(){}\n\t\" ";
+	char *sym = symbols;
+
+	if (*p >= 'a' && *p <= 'z')
+		*p -= 32;
 
 	while (*p != '\0')
 	{
-		if (*p == ',' || *p == ';' || *p == '.' || *p == '!' ||
-		*p == '?' || *p == '"' || *p == '(' || *p == ')' || *p == '{'
-		|| *p == '}')
+		while (*sym != '\0')
 		{
-			if (*(p + 1) >= 'a' && *(p + 1) <= 'z')
-			*(p + 1) -= 32;
+			if (*p == *sym && *(p + 1) >= 'a' && *(p + 1) <= 'z')
+				*(p + 1) -= 32;
+			sym++;
 		}
+		sym = symbols;
 		p++;
 	}
 	return (s);
