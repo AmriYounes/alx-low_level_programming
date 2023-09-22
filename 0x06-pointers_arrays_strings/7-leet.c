@@ -11,17 +11,15 @@ char *leet(char *s)
 	char *p = s;
 	char *letters = "aeotl";
 	char *numbers = "43071";
-	char *lett = letters;
-	int i = 0;
+	int i;
 
 	while (*p != '\0')
 	{
-		for (i; lett[i] != '\0'; i++)
+		for (i = 0; letters[i] != '\0'; i++)
 		{
-			if (*p == lett[i] || *p == lett[i] - 32)
+			if (*p == letters[i] || *p == letters[i] - 32)
 				*p = numbers[i];
 		}
-		i = 0;
 		p++;
 	}
 
