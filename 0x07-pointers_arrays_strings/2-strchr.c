@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * _strchr - Locates the first occurrence of the character c in the string s.
  * @s: Pointer to the string to be searched.
@@ -14,10 +15,8 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 			return (s);
-
 		s++;
 	}
-
 	return (NULL);
 }
 
