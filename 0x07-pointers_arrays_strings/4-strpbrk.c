@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _strpbrk - Searches a string for the first occurrence of any character
  *            from the specified set.
@@ -20,7 +20,6 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == *p)
 				return (s);
-
 			p++;
 		}
 
